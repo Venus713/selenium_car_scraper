@@ -61,6 +61,7 @@ def extract_vehicle_data(driver, year, url, make, model, submodel):
     """Extracts vehicle data and returns it in format.
     """
     driver.get(url)
+    time.sleep(10)
     data = OrderedDict()
 
     data['date_of_data'] = datetime.date.today()
